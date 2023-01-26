@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #FF001F;
+  color: #ffffff;
+  text-transform: uppercase; 
+  margin-bottom: 20px;
+}
+
+.testing-text {
+  color: #bebebe;
+}

@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.button {
+  width: 300px;
+  height: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #FF001F;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+}
+
+.button-icon {
+  position: absolute;
+  right: 10px;
+  height: 30px;
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}

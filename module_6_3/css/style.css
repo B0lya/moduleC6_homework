@@ -1,0 +1,142 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 15px 0 15px;
+}
+
+.main-wrapper {
+  flex-basis: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+}
+
+.input-wrapper__input {
+  flex-grow: 1;
+  height: 24px;
+  margin: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+}
+
+.input-wrapper__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #FF001F;
+  color: #ffffff;
+  text-transform: uppercase;
+  transition-duration: 0.5s;
+  margin: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+.button-send-icon {
+  display: none;
+}
+
+.button-geolocation-icon {
+  display: none;
+}
+
+.status-offline {
+  font-size: 12px;
+  font-style: italic;
+  opacity: 70%;
+  margin-bottom: 5px;
+}
+
+.status-online {
+  color: #008800;
+}
+
+.chat-wrapper {
+  padding: 5px; 
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  border-color: #494949;
+  background-color: #f0f8ff;
+  flex-grow: 1;
+  min-height: 300px;
+  width: 100%;
+  margin-bottom: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.chat-wrapper__message {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 8px;
+  border-radius: 5px;
+  max-width: 45%;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.client-message {
+  align-self: flex-end;
+  background-color: #c0d4fa;
+}
+
+.server-message {
+  align-self: flex-start;
+  background-color: #b1f2b4;
+}
+
+.text-content {
+  margin: 0;
+}
+
+.link-content {
+  margin: 0;
+  text-decoration: 0;
+  color: #0059ff;
+}
+
+.timestamp {
+  margin: 5px 0 0 0;
+  font-size: 10px;
+  font-style: italic;
+  opacity: 70%;
+}
+
+.client-message > .timestamp {
+  align-self: flex-end;
+}
+
+.server-message > .timestamp {
+  align-self: flex-start;
+}
+
